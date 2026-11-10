@@ -65,4 +65,11 @@ ignore:
           bundle
         expires: 2027-06-30T00:00:00.000Z
         created: 2026-11-10T14:42:15.294Z
+  SNYK-JS-FFLATE-22392372:
+    - '*':
+        reason: >-
+          Transitive via pdfkit@0.20.2; fflate 0.8.3 adalah versi terbaru dan
+          belum ada fix; input kompresi berasal dari PDF yang dibuat server
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:51:52.077Z
 patch: {}
