@@ -1,0 +1,68 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: >-
+          Tidak ada versi perbaikan untuk marsdb; aplikasi training, tidak
+          di-deploy ke production
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:39:44.942Z
+  SNYK-JS-BASICFTP-20419408:
+    - '*':
+        reason: >-
+          Transitive via proxy-agent > get-uri, belum ada upgrade path; aplikasi
+          tidak memakai FTP
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:41:01.544Z
+  SNYK-JS-CYCLONEDXCYCLONEDXNPM-17817903:
+    - '*':
+        reason: >-
+          Dev-only dependency (@cyclonedx/cyclonedx-npm), tidak masuk production
+          bundle
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:41:25.983Z
+  SNYK-JS-CYCLONEDXCYCLONEDXNPM-20158546:
+    - '*':
+        reason: >-
+          Dev-only dependency (@cyclonedx/cyclonedx-npm), tidak masuk production
+          bundle
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:41:34.537Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964064:
+    - '*':
+        reason: >-
+          Dev-only dependency (@cyclonedx/cyclonedx-npm), tidak masuk production
+          bundle
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:41:42.264Z
+  SNYK-JS-HTTPCACHESEMANTICS-19964068:
+    - '*':
+        reason: >-
+          Dev-only dependency (@cyclonedx/cyclonedx-npm), tidak masuk production
+          bundle
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:41:50.638Z
+  SNYK-JS-LIBXMLJS2-6808810:
+    - '*':
+        reason: >-
+          Dev-only dependency (@cyclonedx/cyclonedx-npm), tidak masuk production
+          bundle
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:41:58.807Z
+  SNYK-JS-LIBXMLJS2-6808816:
+    - '*':
+        reason: >-
+          Dev-only dependency (@cyclonedx/cyclonedx-npm), tidak masuk production
+          bundle
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:42:07.117Z
+  SNYK-JS-URIJS-19963963:
+    - '*':
+        reason: >-
+          Dev-only dependency (@cyclonedx/cyclonedx-npm), tidak masuk production
+          bundle
+        expires: 2027-06-30T00:00:00.000Z
+        created: 2026-11-10T14:42:15.294Z
+patch: {}
